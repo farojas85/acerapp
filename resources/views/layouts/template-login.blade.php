@@ -18,14 +18,14 @@
     <!-- Fonts -->
     {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com"> --}}
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
     <!-- Styles -->
-    <link href="{{ asset('css/adminlte.min.css') }}" rel="stylesheet">
+    <link href="css/adminlte.min.css" rel="stylesheet">
 </head>
 <body class="hold-transition login-page">
     @yield('content')
     <!-- jQuery -->
-    <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/adminlte.min.js') }}"></script>
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="js/adminlte.min.js"></script>
 </body>
 </html>
