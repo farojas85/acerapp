@@ -4,21 +4,21 @@
         <div class="col-md-12">
             <div class="form-group row">
                 <label class="col-md-3 col-form-label">REPARTIDOR</label>
-                <div class="col-md-10">
+                <div class="col-md-9">
                     <input type="text" class="form-control" value="{{ $repartidor }}"
                         placeholder="Ingrese Nombres"  readonly>
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-md-3 col-form-label">CODIGO ESTUDIANTE</label>
-                <div class="col-md-10">
+                <label class="col-md-4 col-form-label">COD ALUMNO</label>
+                <div class="col-md-8">
                     <input type="text" class="form-control" id="code_a" name="code_a"
                         placeholder="Ingrese Código de Estudiante" >
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-md-3 col-form-label">CONTRASE&Ntilde;A</label>
-                <div class="col-md-10">
+                <label class="col-md-4 col-form-label">CONTRASE&Ntilde;A</label>
+                <div class="col-md-8">
                     <input type="password" class="form-control" id="psw_a" name="psw_a"
                         placeholder="Ingrese Código de Estudiante" >
                 </div>

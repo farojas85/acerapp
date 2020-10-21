@@ -60,7 +60,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="repartir" class="nav-link @if( Request::is('registro')) active @endif">
+                    <a href="registro" class="nav-link @if( Request::is('registro')) active @endif">
                         <i class="nav-icon fas fa-cookie-bite"></i>
                         <p>
                             Repartir

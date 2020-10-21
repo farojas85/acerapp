@@ -17,7 +17,6 @@
       </div>
     </div>
 </div>
-
 <div class="modal" tabindex="-1" role="dialog" id="modal-lg">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">

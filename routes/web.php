@@ -22,4 +22,9 @@ Auth::routes();
 Route::get('/home','HomeController@index')->name('home');
 
 Route::resource('registro', 'RegistroController');
+Route::resource('usuario', 'UserController');
+Route::resource('alumno', 'AlumnoController');
+Route::get('editar-usuario/{id}','UserController@edit');
+Route::get('editar-alumno/{CODE_A}','AlumnoController@edit');
+
 Route::get('entrega-mostrar/{alumno}/{registro}','RegistroController@mostrarEntrega');
