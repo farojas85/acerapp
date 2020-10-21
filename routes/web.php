@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/home','HomeController@index')->name('home');
 
 Route::resource('registro', 'RegistroController');
+Route::get('entrega-mostrar/{alumno}/{registro}','RegistroController@mostrarEntrega');

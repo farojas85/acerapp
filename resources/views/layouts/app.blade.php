@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
     <!-- Styles -->
     <link href="{{ asset('css/adminlte.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet">
 </head>
 <body  class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper" id="app">
@@ -34,6 +35,7 @@
     <script src="{{ asset('js/adminlte.min.js') }}"></script>
     <!-- Bootstrap 4 -->
     <script src=" {{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src=" {{ asset('plugins/sweetalert2/sweetalert2.min.js') }}"></script>
     @yield('scripts')
 </body>
 </html>

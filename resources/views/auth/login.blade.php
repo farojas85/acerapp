@@ -12,7 +12,7 @@
                     @csrf
                     <div class="input-group mb-3">
                         <input type="text" class="form-control @error('dni_user') is-invalid @enderror" placeholder="DNI Usuario"
-                                name="dni_user" id="dni_user">
+                                name="dni_user" id="dni_user" value="{{ old('dni_user') }}">
                         <div class="input-group-append">
                           <div class="input-group-text">
                             <span class="fas fa-user"></span>

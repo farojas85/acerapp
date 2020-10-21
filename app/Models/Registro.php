@@ -19,13 +19,17 @@ class Registro extends Model
         'COD_REG', 'COD_USR','COD_A','REG_REG','FECHA_REG','HORA_REG'
     ];
 
+    public function alumno()
+    {
+        return $this->belongsTo('App\Models\Alumno', 'COD_A', 'COD_A');
+    }
     public function user()
     {
-        return $this->belongsTo('App\Models\User','COD_USR','id');
+        return $this->belongsTo('App\Models\User','COD_USR','COD_USR');
     }
 
     public function registro_detalles()
     {
-        return $this->hasMany('App\Model\ResgistroDetalle', 'COD_REG', 'COD_REG');
+        return $this->hasMany('App\Models\RegistroDetalle', 'COD_REG', 'COD_REG');
     }
 }
