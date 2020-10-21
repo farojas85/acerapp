@@ -11,3 +11,30 @@ $('.btn-nuevo').on("click",function(){
     });
 })
 
+$('.btn-entregar').on("click",function(){
+    var form = $('#form-registro'),
+        url = form.attr('action'),
+        method =form.attr('method');
+
+    $.ajax({
+        url: url,
+        method:method,
+        data:form.serialize(),
+        success: function (respuesta) {
+            console.log(respuesta)
+        },
+        error : function (xhr) {
+            var res = xhr.responseJSON;
+            if ($.isEmptyObject(res) === false) {
+                $.each(res.errors, function (key, value) {
+                    $('#' + key)
+                        .closest('.form-group')
+                        .addClass('has-error')
+                        .append('<span class="help-block"><strong>' + value + '</strong></span>');
+                });
+            }
+        }
+
+    });
+})
+

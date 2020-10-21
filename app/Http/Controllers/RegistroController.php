@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Auth;
+use App\Models\Registro;
+use App\Models\RegistroDetalle;
 use Illuminate\Http\Request;
 
 class RegistroController extends Controller
@@ -37,7 +39,21 @@ class RegistroController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $reglas = [
+            'code_a' =>'required',
+            'psw_a' => 'required',
+            'racion' => 'required|array|min:1',
+            "racion.*"  => "required|string|distinct|min:1",
+        ];
+
+        $mensaje=[
+            'required' => '* Campo Obligatorio',
+            'min' => '* Debe Seleccionar al menos 1 ración'
+        ];
+
+        $this->validate($request,$reglas,$mensaje);
+
+
     }
 
     /**
