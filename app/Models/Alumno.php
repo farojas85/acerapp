@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Alumno extends Model
 {
     use HasFactory;
-    protected $table="ALUMNO";
+    protected $table="alumno";
 
     protected $primaryKey ='COD_A';
 

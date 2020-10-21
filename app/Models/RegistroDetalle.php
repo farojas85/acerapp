@@ -9,7 +9,7 @@ class RegistroDetalle extends Model
 {
     use HasFactory;
 
-    protected $table="DETREGISTRO";
+    protected $table="detregistro";
 
     protected $primaryKey ='COD_DETREG';
 
