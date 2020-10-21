@@ -3,7 +3,7 @@
 @section('content')
     <div class="login-box">
         <div class="login-logo">
-            <a href="/login"><img src="{{ asset('images/logo-unheval.png') }}" height="80"></a>
+            <a href="/login"><img src="images/logo-unheval.png" height="80"></a>
         </div>
         <div class="card">
             <div class="card-body login-card-body">
