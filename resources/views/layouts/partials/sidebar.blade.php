@@ -36,13 +36,21 @@
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                <li class="nav-item">
+                    <a href="registro" class="nav-link @if( Request::is('registro')) active @endif">
+                        <i class="nav-icon fas fa-cookie-bite"></i>
+                        <p>
+                            Repartir
+                        </p>
+                    </a>
+                </li>
+               {{-- <li class="nav-item">
                     <a href="inicio" class="nav-link @if( Request::is('home')) active @endif ">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Inicio
                         </p>
                     </a>
-                </li>
+                </li> --}}
                 <li class="nav-item">
                     <a href="usuario" class="nav-link @if( Request::is('usuario')) active @endif">
                         <i class="nav-icon fas fa-user"></i>
@@ -56,14 +64,6 @@
                         <i class="nav-icon fas fa-users"></i>
                         <p>
                             Alumno
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="registro" class="nav-link @if( Request::is('registro')) active @endif">
-                        <i class="nav-icon fas fa-cookie-bite"></i>
-                        <p>
-                            Repartir
                         </p>
                     </a>
                 </li>
