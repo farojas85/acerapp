@@ -40,6 +40,7 @@
                                                 <th>C&oacute;digo</th>
                                                 <th>DNI Alumno</th>
                                                 <th>Nombres y Apellidos</th>
+                                                <th>Clave</th>
                                                 <th>Celular</th>
                                                 <th>Escuela</th>
                                                 <th>Distrito</th>
@@ -53,6 +54,7 @@
                                                 <td>{{ $alumno->CODE_A }}</td>
                                                 <td>{{ $alumno->DNI_A }}</td>
                                                 <td>{{ $alumno->NOM_A." ".$alumno->APP_A." ".$alumno->APM_A }}</td>
+                                                <td>{{ $alumno->PSW_A }}</td>
                                                 <td>{{ $alumno->CEL_A }}</td>
                                                 <td>{{ $alumno->ESC_A }}</td>
                                                 <td>{{ $alumno->DIS_A }}</td>

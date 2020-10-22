@@ -16,6 +16,13 @@
         </div>
     </div>
     <div class="form-group row">
+        <label class="col-md-4 col-form-label">Contrase&ntilde;a</label>
+        <div class="col-md-8">
+            <input type="text" class="form-control" placeholder="Ingrese Código Alumno"
+                   id="PSW_A" name="PSW_A" maxlength="4" value="{{ $alumno->PSW_A }}">
+        </div>
+    </div>
+    <div class="form-group row">
         <label class="col-md-4 col-form-label">Apellido Paterno</label>
         <div class="col-md-8">
             <input type="text" class="form-control" placeholder="Ingrese Apellido Paterno"
@@ -138,7 +145,10 @@
             .closest('.col-md-8')
             .removeClass('has-error')
         $('#DNI_A').removeClass('is-invalid')
-
+        $('#PSW_A')
+            .closest('.col-md-8')
+            .removeClass('has-error')
+        $('#PSW_A').removeClass('is-invalid')
         $('#APP_A')
             .closest('.col-md-8')
             .removeClass('has-error')

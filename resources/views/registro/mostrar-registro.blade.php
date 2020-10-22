@@ -15,7 +15,7 @@
         <div class="form-group row">
             <label class="col-md-3 col-form-label">HORA:</label>
             <div class="col-md-10">
-                <input type="text" class="form-control" value="{{ \Carbon\Carbon::parse($registro->HORA_REG)->format('d/m/Y') }}" readonly>
+                <input type="text" class="form-control" value="{{ \Carbon\Carbon::parse($registro->HORA_REG)->format('H:i:s') }}" readonly>
             </div>
         </div>
         <div class="form-group row">

@@ -137,7 +137,7 @@ class AlumnoController extends Controller
 
         $alumno->CODE_A = $request->CODE_A;
         $alumno->DNI_A = $request->DNI_A;
-        $alumno->PSW_A = rand(1000,9000);
+        $alumno->PSW_A = $request->PSW_A;
         $alumno->APP_A = $request->APP_A;
         $alumno->APM_A = $request->APM_A;
         $alumno->NOM_A = $request->NOM_A;
